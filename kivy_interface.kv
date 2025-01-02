@@ -1,0 +1,44 @@
+<QASystem>:
+    orientation: "vertical"
+    padding: 20
+    spacing: 20
+
+    # Context Input Section
+    Label:
+        text: "Enter Context:"
+        size_hint_y: None
+        height: 30
+
+    TextInput:
+        id: context_input
+        multiline: True
+        size_hint_y: None
+        height: 150
+
+    # Question Input Section
+    Label:
+        text: "Enter Question:"
+        size_hint_y: None
+        height: 30
+
+    TextInput:
+        id: question_input
+        multiline: False
+        size_hint_y: None
+        height: 40
+
+    # Submit Button
+    Button:
+        text: "Get Answer"
+        size_hint_y: None
+        height: 50
+        on_press: root.get_answer()
+
+    # Answer Output Section
+    Label:
+        id: answer_label
+        text: "Answer will appear here"
+        size_hint_y: None
+        height: 30
+        halign: "center"
+        valign: "middle"
